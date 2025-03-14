@@ -29,7 +29,7 @@ const rowRemove = document.body.querySelector('.remove-row');
 rowRemove.onclick = (e) => {
   const fieldNodeList = field.querySelectorAll('tr');
 
-  if (fieldNodeList.length > 4) {
+  if (fieldNodeList.length > 2) {
     fieldNodeList[fieldNodeList.length - 1].remove();
   }
 };
@@ -58,7 +58,7 @@ const columRemove = document.body.querySelector('.remove-column');
 columRemove.addEventListener('click', (e) => {
   const culumLength = field.querySelectorAll('tr')[0].children;
 
-  if (culumLength.length === 4) {
+  if (culumLength.length === 2) {
     return;
   }
 
